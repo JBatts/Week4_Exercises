@@ -15,6 +15,6 @@ function favoritePlace() {
     console.log(a2)
 }
 
-console.log(favoriteThings())
-console.log(whyImHere())
-console.log(favoritePlace())
+favoriteThings()
+whyImHere()
+favoritePlace()
