@@ -28,3 +28,5 @@ function greet(who, age) {
 
 greet("Kevin Hart", 57)
 greet("Chris Brown", 19)
+
+console.log(new Date())
