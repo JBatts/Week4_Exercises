@@ -12,3 +12,5 @@ console.log(nPosition)
 
 zPosition = text.indexOf("z")
 console.log(zPosition) // -1 not found
+
+console.log(String.fromCharCode(66))
