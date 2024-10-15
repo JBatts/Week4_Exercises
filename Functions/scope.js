@@ -20,3 +20,16 @@ console.log(`${firstName} is our teacher`) // firstName does not exist in the gl
 // Global
 // Local
 // Function / Block Scope {{nesting like russian doll}}
+
+function add(a, b) {
+    let output = a + b;
+    return output;
+}
+function mult(a, b) {
+    let output = a * b;
+    return output;
+}
+
+console.log(add(6, 7)) // adds the two numbers together
+console.log(mult(6, 7))
+console.log(output) // Shows an error or if a Global variable is used in the function displays most recent
