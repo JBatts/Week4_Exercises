@@ -16,4 +16,15 @@ begin()
 middle()
 end()
 
+///////////////////////////////////////////////////////////////
+function greet(who, age) {
+    console.log(`Howdy, ${who} if I had to guess you are about ${age} years old dummy.`);
+    if(age >= 40) {
+        console.log(`${who} do you realize you are starting to get old.`)
+    } else {
+        console.log(`${who} do you realize your life has just begun.`)
+    }
+}
 
+greet("Kevin Hart", 57)
+greet("Chris Brown", 19)
