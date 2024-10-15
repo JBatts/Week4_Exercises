@@ -6,4 +6,4 @@ function convertFtoC(currentTemp) {
     let currentTemp = 100
     let celsiusTemp = convertFtoC(currentTemp)
     
-    console.log(celsiusTemp)
+console.log(celsiusTemp)
