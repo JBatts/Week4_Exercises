@@ -1,15 +1,18 @@
 function favoriteThings() {
-    console.log("Jalen Battle")
-    console.log("Avengers: End-Game")
-    console.log("JuiceWrld")
+    let a = "Jalen Battle"
+    let b = "Avengers: End-Game"
+    let c = "JuiceWrld"
+    console.log(a, b, c)
 }
 
 function whyImHere() {
-    console.log("I joined Learning to Code to become a professional")
+    let a1 = "I joined Learning to Code to become a professional"
+    console.log(a1)
 }
 
 function favoritePlace() {
-    console.log("My favorite plave to visit is my girlfriend's apartment, because she always makes me happy!")
+    let a2 = "My favorite plave to visit is my girlfriend's apartment, because she always makes me happy!"
+    console.log(a2)
 }
 
 console.log(favoriteThings())
