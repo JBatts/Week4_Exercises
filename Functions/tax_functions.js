@@ -26,7 +26,8 @@ function getFederalTax(taxableWages, withCode) {
         taxRate = .185;
 
     } else if (withCode >= 4) {
-        taxRate = .18 + (0.5 *(withCode - 4));
+        let rate = Number(withCode) - 4
+        taxRate = .18 - (0.05 * rate);
     }
     
     let federalTax = Number(taxableWages) * Number(taxRate)
