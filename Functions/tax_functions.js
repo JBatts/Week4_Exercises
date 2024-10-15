@@ -14,16 +14,16 @@ function getFederalTax(taxableWages, withCode) {
     let taxRate;
 
     if(withCode === 1) {
-        taxRate = .21
+        let taxRate = .21
         
     } else if (withCode === 2) {
-        taxRate = .195
+        let taxRate = .195
 
     } else if (withCode === 0) {
-        taxRate = .23;
+        let taxRate = .23;
 
     } else if (withCode === 3) {
-        taxRate = .185;
+        let taxRate = .185;
 
     } else if (withCode >= 4) {
         let rate = Number(withCode) - 4
