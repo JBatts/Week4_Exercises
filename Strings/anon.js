@@ -10,19 +10,37 @@
 
 // Anonymous Functions
 
-a = 123
-b = a
-c = b
-console.log(c)
+a = 123;
+b = a;
+c = b;
+console.log(c);
 
 function greet(firstName) { // This is a function (Tradition)
-    return "Howdy " + firstName
+    return "Howdy " + firstName;
 }
  console.log(greet("Juck the Overlord"));
 
 
-let greet2 = firstName => "howdy " + firstName // This is also a function (Treat a function as a value)
+let greet2 = firstName => "Howdy " + firstName; // This is also a function (Treat a function as a value)
 
-hi = greet2 
+hi = greet2 ;
 
-console.log(hi("Jucking"))
+console.log(hi("Jucking"));
+
+function bye() {
+    console.log("Goodbye");
+}
+bye(); // invoke / call
+
+// IIFE (immediatly invoked function expression)
+
+(() => console.log("Goodbye and Good Riddance"))();
+
+function bePolite(who, callback) {
+    return callback(who);
+}
+
+console.log(bePolite("Little Warriors", hi));
+console.log(bePolite("Little Warriors", greet));
+console.log(bePolite("Little Warriors", greet2));
+console.log(bePolite("Little Warriors", s => `Night Night ${s}`));
