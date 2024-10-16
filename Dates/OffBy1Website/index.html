@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="date" id="date">
+    <button id="button">Button</button>
+    <p id="para"></p>
+</body>
+<script>
+    function onClick() {
+        let date = document.getElementById("date").value;
+        let dateObject = new Date(date);
+        let prettyDate = dateObject.toString();
+
+        let para = document.getElementById("para");
+        para.innerText = convert(prettyDate);
+
+    }
+
+//     function convert(date) {
+//     return date
+// }
+
+    button.addEventListener("click", onClick)
+</script>
+</html>
